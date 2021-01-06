@@ -31,7 +31,9 @@ setup(
         CTypesExtension(
             "pdfresurrect.pdf",
             ["pdfresurrect/pdf.c",
-             "pdfresurrect/main.c"],
+             "pdfresurrect/main.c",
+             "pdfresurrect/include/pdf.h",
+             "pdfresurrect/include/main.h"],
             include_dirs=['pdfresurrect/include'],
             extra_compile_args=['-fPIC']
         ),
