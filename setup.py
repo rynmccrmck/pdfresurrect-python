@@ -25,15 +25,14 @@ class build_ext(build_ext_orig):
 
 setup(
     name="pdfresurrect-python",
-    version="1.0.1",
+    version="1.0.2",
     packages=["pdfresurrect"],
+    headers=['pdfresurrect/include/main.h', 'pdfresurrect/include/pdf.h'],
     ext_modules=[
         CTypesExtension(
             "pdfresurrect.pdf",
             ["pdfresurrect/pdf.c",
-             "pdfresurrect/main.c",
-             "pdfresurrect/include/pdf.h",
-             "pdfresurrect/include/main.h"],
+             "pdfresurrect/main.c"],
             include_dirs=['pdfresurrect/include'],
             extra_compile_args=['-fPIC']
         ),
