@@ -25,7 +25,7 @@ class build_ext(build_ext_orig):
 
 setup(
     name="pdfresurrect-python",
-    version="1.0.0",
+    version="1.0.1",
     packages=["pdfresurrect"],
     ext_modules=[
         CTypesExtension(
