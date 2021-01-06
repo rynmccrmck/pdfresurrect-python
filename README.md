@@ -1,7 +1,7 @@
-# pdfresurrect-python
+# pdfresurrect-python (WIP)
 
-Python port of the package [pdfresurrect](https://github.com/enferex/pdfresurrect)
+Python wrapper of the package [pdfresurrect](https://github.com/enferex/pdfresurrect)
 
 ```
-pip install .....
+pip install pdfresurrect-python
 ```
